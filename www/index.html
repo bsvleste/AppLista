@@ -37,26 +37,6 @@
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
-<style>
-div.scrollmenu {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-    background-color: #777;
-}
-</style>
-
 <body ng-app="myShoppingList" ng-cloak ng-controller="myCtrl">
     <div class = "views">
         <div class = "view view-main">
@@ -67,7 +47,15 @@ div.scrollmenu a:hover {
                      <div class = "navbar-inner">
                         <div class = "left"> </div>
                         <div class = "center">
-<div class="scrollmenu">
+
+                        </div>
+                        <div class = "right"> </div>
+                     </div>
+                  </div>
+                  
+                  <div class = "page-content">
+                    <div class = "card">
+                        <div class = "card-header"><div class="scrollmenu">
   <a href="#home">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
@@ -83,16 +71,7 @@ div.scrollmenu a:hover {
   <a href="#partners">Partners</a>
   <a href="#people">People</a>
   <a href="#work">Work</a>
-</div>
-
-                        </div>
-                        <div class = "right"> </div>
-                     </div>
-                  </div>
-                  
-                  <div class = "page-content">
-                    <div class = "card">
-                        <div class = "card-header">Lista de Compras</div>
+</div></div>
                         <div class = "card-content">
                            <div class = "card-content-inner">
                                
