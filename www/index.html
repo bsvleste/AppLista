@@ -39,23 +39,6 @@
 </head>
 
 <body ng-app="myShoppingList" ng-cloak ng-controller="myCtrl">
-    <div class="scrollmenu">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="#support">Support</a>
-  <a href="#blog">Blog</a>
-  <a href="#tools">Tools</a>  
-  <a href="#base">Base</a>
-  <a href="#custom">Custom</a>
-  <a href="#more">More</a>
-  <a href="#logo">Logo</a>
-  <a href="#friends">Friends</a>
-  <a href="#partners">Partners</a>
-  <a href="#people">People</a>
-  <a href="#work">Work</a>
-</div>
     <div class = "views">
         <div class = "view view-main">
             <div class = "pages">
@@ -64,9 +47,7 @@
                   <div class = "navbar">
                      <div class = "navbar-inner">
                         <div class = "left"> </div>
-                        <div class = "center">
-
-                        </div>
+                        <div class = "center">Swipe To Delete</div>
                         <div class = "right"> </div>
                      </div>
                   </div>
@@ -76,7 +57,28 @@
                         <div class = "card-header">Lista de Compras</div>
                         <div class = "card-content">
                            <div class = "card-content-inner">
-                               
+                               <li class = "swipeout">
+                              
+                              <div class = "swipeout-content">
+                                 <a href = "#" class = "item-content item-link">
+                                    <div class = "item-inner">
+                                       
+                                       <div class = "item-title-row">
+                                          <div class = "item-title">Amayon</div>
+                                          <div class = "item-after">7:10</div>
+                                       </div>
+                                       
+                                       <div class = "item-subtitle">Your order has been shipped</div>
+                                       <div class = "item-text">Lorem ipsum dolor sit amet, consectetur 
+                                          adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim 
+                                          lacus tincidunt.</div>
+                                    </div>
+                                 </a>
+                              </div>
+                              
+                              <div class = "swipeout-actions-left"><a href = "#" class = "swipeout-overswipe bg-pink reply">Reply</a><a href = "#" class = "bg-blue forward">Forward</a></div>
+                              <div class = "swipeout-actions-right"><a href = "#" class = "mark bg-lightblue">Spam</a><a href = "#" class = "swipeout-delete swipeout-overswipe">Delete</a></div>
+                           </li>
                                <div class = "list-block">
                                     <ul>
                                         <li class = "item-content" ng-repeat="x in products track by $index">
@@ -108,7 +110,6 @@
          </div>
       </div>
 
-    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/angular.js"></script>
